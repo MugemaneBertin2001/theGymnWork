@@ -1313,6 +1313,7 @@ Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
 ```
 
 ## Bundle 5
+## exercise 1
 ### these steps are made on github account
 - On your github repo enable github pages
 - Check if the link is publicly visible to anyone
@@ -1435,4 +1436,302 @@ $
 ```
 
 
+# Bundle 6
 
+### squence of commands used for exercise 1
+
+```shell
+Admin@Aluxer MINGW64 /f
+$ cd git-cafe-exercise/
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git checkout -b Exercise1
+Switched to a new branch 'Exercise1'
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise1)
+$ vi menu.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise1)
+$ git add .
+warning: in the working copy of 'menu.html', LF will be replaced by CRLF the next time Git touches it
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise1)
+$ git commit -m "adding menu.html"
+[Exercise1 413aa8a] adding menu.html
+ 1 file changed, 3 insertions(+)
+ create mode 100644 menu.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise1)
+$ git push
+fatal: The current branch Exercise1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Exercise1
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise1)
+$ git push --set-upstream origin Exercise1
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 301 bytes | 301.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'Exercise1' on GitHub by visiting:
+remote:      https://github.com/MugemaneBertin2001/git-cafe-exercise/pull/new/Exercise1
+remote:
+To https://github.com/MugemaneBertin2001/git-cafe-exercise.git
+ * [new branch]      Exercise1 -> Exercise1
+branch 'Exercise1' set up to track 'origin/Exercise1'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise1)
+$
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git merge Exercise1
+Updating f4503a0..413aa8a
+Fast-forward
+ menu.html | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 menu.html
+```
+### squence of commands used for exercise 2
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git checkout Exercise2
+error: pathspec 'Exercise2' did not match any file(s) known to git
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git checkout -b Exercise2
+Switched to a new branch 'Exercise2'
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise2)
+$ vi index.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise2)
+$ ls
+README.md  css/     index-1.html  index-3.html  index.html  menu.html
+bat/       images/  index-2.html  index-4.html  js/
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise2)
+$ vi index-4.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise2)
+$ git add .
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise2)
+$ git commit -m "turning index-4.html  title to contact"
+[Exercise2 ca345c2] turning index-4.html  title to contact
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise2)
+$ git push
+fatal: The current branch Exercise2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Exercise2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise2)
+$  git push --set-upstream origin Exercise2
+```
+```shell
+
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 394 bytes | 131.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'Exercise2' on GitHub by visiting:
+remote:      https://github.com/MugemaneBertin2001/git-cafe-exercise/pull/new/Exercise2
+remote:
+To https://github.com/MugemaneBertin2001/git-cafe-exercise.git
+ * [new branch]      Exercise2 -> Exercise2
+branch 'Exercise2' set up to track 'origin/Exercise2'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise2)
+$
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git merge Exercise2
+Updating 413aa8a..ca345c2
+Fast-forward
+ index-4.html | 4 ++--
+ index.html   | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+```
+### squence of commands used for exercise 3
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git checkout -b Exercise3
+Switched to a new branch 'Exercise3'
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ vi index-4.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ git add .
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ git commit -m "change phone number from +1 800 603 6035 to - `+1 800 659 6035`
+"
+bash: +1: command not found
+[Exercise3 367e6b0] change phone number from +1 800 603 6035 to -
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ git commit -m "change phone number from +1 800 603 6035 to - +1 800 659 6035
+"
+On branch Exercise3
+nothing to commit, working tree clean
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ git status
+On branch Exercise3
+nothing to commit, working tree clean
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ git status
+On branch Exercise3
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index-4.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ git add .
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ git commit -m "change phone number from +1 800 603 6035 to - +1 800 659 6035
+"
+[Exercise3 0c6a462] change phone number from +1 800 603 6035 to - +1 800 659 6035
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ git push
+fatal: The current branch Exercise3 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Exercise3
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ git push --set-upstream origin Exercise3
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 601 bytes | 300.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'Exercise3' on GitHub by visiting:
+remote:      https://github.com/MugemaneBertin2001/git-cafe-exercise/pull/new/Exercise3
+remote:
+To https://github.com/MugemaneBertin2001/git-cafe-exercise.git
+ * [new branch]      Exercise3 -> Exercise3
+branch 'Exercise3' set up to track 'origin/Exercise3'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ checkout main
+bash: checkout: command not found
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git checkout Exercise3
+Switched to branch 'Exercise3'
+Your branch is up to date with 'origin/Exercise3'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (Exercise3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git merge Exercise3
+Updating ca345c2..0c6a462
+Fast-forward
+ index-4.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MugemaneBertin2001/git-cafe-exercise.git
+   f4503a0..0c6a462  main -> main
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+```
