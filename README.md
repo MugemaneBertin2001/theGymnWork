@@ -1083,7 +1083,7 @@ Admin@Aluxer MINGW64 /f/theGymnWork (ft/faq-page)
 
 # Bundle 4
 
-### squence of commands used for exercise 2
+### squence of commands used for exercise 1
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
 $ code .
@@ -1190,4 +1190,124 @@ To https://github.com/MugemaneBertin2001/thegymn2repo.git
 ```
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
+```
+
+### squence of commands used for exercise 1
+
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$ vi footer.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$ git add .
+warning: in the working copy of 'footer.html', LF will be replaced by CRLF the next time Git touches it
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$ git commit -m "Add more changes again to the branch and create a second commit"
+[ft/footer 439dc6e] Add more changes again to the branch and create a second commit
+ 2 files changed, 112 insertions(+), 5 deletions(-)
+ create mode 100644 footer.html
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$ git push  git-copy
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.17 KiB | 598.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/MugemaneBertin2001/thegymn2repo/pull/new/ft/footer
+remote:
+To https://github.com/MugemaneBertin2001/thegymn2repo.git
+ * [new branch]      ft/footer -> ft/footer
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/squashing)
+$ git merge --squash main
+Already up to date. (nothing to squash)
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/squashing)
+$ git checkout ft/footer
+Switched to branch 'ft/footer'
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$ git merge --squash main
+Already up to date. (nothing to squash)
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$ git add .
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$ git commit -m "footer changes squashing"
+On branch ft/footer
+nothing to commit, working tree clean
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$ git push --set-upstream origin ft/footer
+
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.17 KiB | 598.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/MugemaneBertin2001/theGymnWork/pull/new/ft/footer
+remote:
+To https://github.com/MugemaneBertin2001/theGymnWork.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$ git merge --squash main
+Already up to date. (nothing to squash)
+```
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
 ```
