@@ -1735,3 +1735,6 @@ To https://github.com/MugemaneBertin2001/git-cafe-exercise.git
 ```shell
 Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
 ```
+### squence of commands used for exercise 4
+
+every exercise was considered as a branch so each is merged.
