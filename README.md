@@ -1192,7 +1192,7 @@ To https://github.com/MugemaneBertin2001/thegymn2repo.git
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
 ```
 
-### squence of commands used for exercise 
+### squence of commands used for exercise  2
 
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (main)
