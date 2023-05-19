@@ -1311,3 +1311,128 @@ Already up to date. (nothing to squash)
 ```shell
 Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
 ```
+
+## Bundle 5
+### these steps are made on github account
+- On your github repo enable github pages
+- Check if the link is publicly visible to anyone
+
+### squence of commands used for exercise  2
+
+```shell
+Admin@Aluxer MINGW64 /f/theGymnWork (ft/footer)
+$ cd ..
+```
+```shell
+Admin@Aluxer MINGW64 /f
+$ git clone https://github.com/MugemaneBertin2001/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 100
+Receiving objects: 100% (107/107), 1.95 MiB | 106.00 KiB/s, done.
+Resolving deltas: 100% (5/5), done.
+```
+```shell
+Admin@Aluxer MINGW64 /f
+$ cd git-cafe-exercise/
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ code .
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git checkout -b modi
+Switched to a new branch 'modi'
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (modi)
+$ git status
+On branch modi
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (modi)
+$ git add .
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (modi)
+$ git commit -m "modifies index.html
+> "
+[modi f4503a0] modifies index.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (modi)
+$ git push
+fatal: The current branch modi has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin modi
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+```
+```shell
+
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (modi)
+$ git push --set-upstream origin modi
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'modi' on GitHub by visiting:
+remote:      https://github.com/MugemaneBertin2001/git-cafe-exercise/pull/new/modi
+remote:
+To https://github.com/MugemaneBertin2001/git-cafe-exercise.git
+ * [new branch]      modi -> modi
+branch 'modi' set up to track 'origin/modi'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (modi)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git merge modi
+Updating d1d3f9c..f4503a0
+Fast-forward
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MugemaneBertin2001/git-cafe-exercise.git
+   d1d3f9c..f4503a0  main -> main
+```
+```shell
+Admin@Aluxer MINGW64 /f/git-cafe-exercise (main)
+$
+```
+
+
+
